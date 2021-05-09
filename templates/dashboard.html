@@ -1,0 +1,62 @@
+<html>
+    <head>
+        {% load static %}
+        <link rel="stylesheet" href="{%  static 'dashboard.css' %}">
+        
+    </head>
+    <body>
+      <script>
+        alertfunc = ()=> {
+          alert("Alerts will be sent to your email ID. Courtesy of Courier.");
+        }
+        
+      </script>
+        <div class="nav">
+            <input type="checkbox" id="nav-check">
+            <div class="nav-header">
+              <img src="{%  static 'logo.png' %}" alt="flood vision" class="nav-logo"/>
+              <div class="nav-title">
+                FloodVision
+              </div>
+            </div>
+            <div class="nav-btn">
+              <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+            </div>
+            
+            <div class="nav-links">
+              <a href="#" onclick=alertfunc()>Enable Alerts</a>
+              <!--If the user has enabled danger alerts it should change to disable-->
+                <a href="landing.html" >Change Pincode</a>
+              <!-- <a href="#" >VIEW REALTIME FLOODS</a> -->
+            </div>
+          </div>
+
+          <div class="notifs">
+              <div class="card1">
+                  <div class="headingbox">
+                      <p class="head"> Upcoming Alerts
+                    </p>
+                    <p class="alert1">{{ prednow }}</p>
+                      </div>
+              </div>
+              <div class="card2">
+                <div class="headingbox">
+                    <p class="head"> Past Alerts
+                  </p>
+                  <p class="alert2">{{ pred1 }}</p>
+                    <br>
+                    <p class="alert2">{{ pred2 }}</p>
+                    <br>
+                    <p class="alert2">{{ pred3 }}</p>
+                    </div>
+              </div>
+          </div>
+          <img src="{%  static 'Final_map.png' %}" alt="map" class="map">
+  <!-- <iframe src="map.html" frameborder="0"></iframe> -->
+         
+    </body>
+</html>

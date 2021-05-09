@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-color: #eee2dc;
+}
+.notifs {
+  width: 600px;
+  height: 500px;
+  margin-left: 3%;
+  margin-top: 2%;
+  float: left;
+}
+
+.nav-logo {
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 50px;
+}
+
+.card1 {
+  width: 100%;
+  height: 240px;
+  background-color: #edc7b7;
+  box-shadow: rgb(134, 109, 109) 5px 2px 10px 2px;
+  border-radius: 15px;
+}
+.card2 {
+  width: 100%;
+  height: 225px;
+  background-color: #edc7b7;
+  box-shadow: rgb(134, 109, 109) 5px 2px 10px 2px;
+  border-radius: 15px;
+  margin-top: 3%;
+}
+.headingbox {
+  width: 100%;
+  background-color: #aaa1a5;
+  color: #ac3b61;
+  height: 50px;
+  border-radius: 15px;
+  font-weight: 500;
+  font-size: 32px;
+}
+.head {
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+.nav {
+  height: 50px;
+  width: 100%;
+  background-color: #bab2b5;
+  position: relative;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 700;
+  color: #ac3b61;
+  margin-bottom: 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color ease 0.3s;
+  color: #ac3b61;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,
+  .nav #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+iframe {
+  float: right;
+  margin-top: 3%;
+  width: 700px;
+  height: 500px;
+}
+.alert1,
+.alert2 {
+  color: #12369c;
+  text-align: center;
+}
+.alert2 {
+  font-size: 24px;
+  margin-top: -4%;
+  color: #12369c;
+}
+
+.map {
+  width: 700px;
+  position: fixed;
+  right: 50px;
+  top: 180px;
+}
